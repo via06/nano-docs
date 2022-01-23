@@ -1,0 +1,20 @@
+diff --git a/docs/core-development/code-standards.md b/docs/core-development/code-standards.md
+index 97b0514e9..d98d74602 100644
+--- a/docs/core-development/code-standards.md
++++ b/docs/core-development/code-standards.md
+@@ -12,7 +12,7 @@ clang-format is used to enforce most of the formatting rules, such as:
+ * Space before open parenthesis.
+ * Space after comma.
+ 
+-Running `ci/clang-format-all.sh` on \*nix systems is required before pushing your code to ensure that the formatting is good. If you want to do formatting from the IDE, chances are there's a plugin available. Visual studio for instance provides a way to automatically format on saving. The definition file `.clang-format` is located in the project root directory.
++Running `ci/clang-format-do.sh` on \*nix systems is required before pushing your code to ensure that the formatting is good. If you want to do formatting from the IDE, chances are there's a plugin available. Visual Studio for instance provides a way to automatically format on saving. The definition file `.clang-format` is located in the project root directory. For CMake changes, running `cmake-format-do.sh` is required as well.
+ 
+ Make sure you set up your editor to use tabs. Use tabs for indentation, and spaces for alignment [^1]. That way, you can use any tab size you want in your favorite editor, but the code will still look good for people with different settings.
+ 
+@@ -44,4 +44,4 @@ Your code will be reviewed with security in mind, but please do your part before
+ * Use static and dynamic analysis tools, such as valgrind, XCode instrumentation, linters and sanitizers. These tools are also great for debugging crashes and performance problems.
+ 
+ [^1]: https://dmitryfrank.com/articles/indent_with_tabs_align_with_spaces
+-[^2]: http://www.acodersjourney.com/2016/02/c-11-auto/
+\ No newline at end of file
++[^2]: http://www.acodersjourney.com/2016/02/c-11-auto/
